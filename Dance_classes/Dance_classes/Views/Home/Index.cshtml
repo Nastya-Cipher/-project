@@ -1,0 +1,24 @@
+﻿@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+    <div>
+        <h3>Запись на занятие</h3>
+        <table>
+            <tr class="header">
+                <td><p>Вид танца</p></td>
+                <td><p>Тренер</p></td>
+                <td><p>Цена</p></td>
+                <td></td>
+            </tr>
+            @foreach (var d in ViewBag.Dances)
+            {
+                <tr>
+                    <td><p>@d.TypeOfDance</p></td>
+                    <td><p>@d.Treiner</p></td>
+                    <td><p>@d.Price</p></td>
+                    <td><p><a href="/Home/Sing_up/@d.Id">Записаться</a></p></td>
+                </tr>
+            }
+        </table>
+    </div>
