@@ -21,10 +21,21 @@ namespace Dance_classes.Controllers
             // возвращаем представление
             return View();
         }
-        
+
+        public FilePathResult Downland()
+        {
+            string file_path = Server.MapPath("~/Files/text.docx");
+            string file_type = "aplication/docx";
+            return File(file_path, file_type);
+        }
+       
         [HttpGet]
         public ActionResult Sing_up(int id)
         {
+            if (id <= 2)
+            {
+                return Redirect("/My");
+            }
             ViewBag.DanceId = id;
             return View();
         }
@@ -36,5 +47,8 @@ namespace Dance_classes.Controllers
             db.SaveChanges();
             return "Позравляем, вы записались на самые опупенные танцули, ёу!";
         }
+
+       
+       
     }
 }
