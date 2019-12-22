@@ -7,13 +7,18 @@ using System.Web.Routing;
 
 namespace Dance_classes.Controllers
 {
-    public class MyController : IController
+    public class MyController : Controller
     {
-        public void Execute(RequestContext requestContext)
+        public FilePathResult Downland()
         {
-            string ip = requestContext.HttpContext.Request.UserHostAddress;
-            var response = requestContext.HttpContext.Response;
-            response.Write("<h2>Ваш IP-адрес: " + ip + "</h2>");
+            string file_path = Server.MapPath("~/Files/text.docx");
+            string file_type = "aplication/docx";
+            return File(file_path, file_type);
+        }
+
+        public string Error()
+        {
+            return "Увы, мест нет";
         }
     }
 }

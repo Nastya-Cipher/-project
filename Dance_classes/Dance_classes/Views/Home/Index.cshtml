@@ -1,5 +1,6 @@
 ﻿@{
     Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewBag.Title = "Start";
 }
 
     <div>
@@ -13,12 +14,18 @@
             </tr>
             @foreach (var d in ViewBag.Dances)
             {
-                <tr>
-                    <td><p>@d.TypeOfDance</p></td>
-                    <td><p>@d.Treiner</p></td>
-                    <td><p>@d.Price</p></td>
-                    <td><p><a href="/Home/Sing_up/@d.Id">Записаться</a></p></td>
-                </tr>
+            <tr>
+                <td><p>@d.TypeOfDance</p></td>
+                <td><p>@d.Treiner</p></td>
+                <td><p>@d.Price</p></td>
+                <td><p><button onclick="location.href='/Home/Sing_up/@d.Id'"> Записаться </button></p></td>
+                
+            </tr>
             }
         </table>
+        <form action="/My/Downland">
+            <button type="submit">Скачать</button>
+        </form>
+        <div>Справка о документах</div>
+        <button onclick="location.href='/My/Downland'" > Скачать </button> 
     </div>
