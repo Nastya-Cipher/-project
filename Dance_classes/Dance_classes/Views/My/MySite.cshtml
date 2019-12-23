@@ -1,0 +1,104 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Website by template</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    
+    @Styles.Render("~/Content/style.css")    
+    @Styles.Render("~/Content/IconAll.css")
+    @Styles.Render("~/Content/IconAll.js")
+
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-sm" style="background-color: black;">
+        <div class="container">
+            <div class="navbar-brand logo">AXIT</div>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResp">
+                <i class="fas fa-align-justify" data-fa-transform="grow-2" style="color:white"></i>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarResp">
+                <ul class="navbar-nav ml-auto panel">
+                    <li class="nav item">
+                        <a href="#" class="nav-link p">Features</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#" class="nav-link p">About</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#" class="nav-link p">Pricing</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#" class="nav-link p">Reviews</a>
+                    </li>
+                    <li class="nav item">
+                        <a href="#" class="nav-link p">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+    </nav>
+
+
+
+    <main>
+        <div class="container">
+            <div class="row justify-content-between">
+                <div class="col-md-5 col-xs-12 text-left">
+                    <div class="logo" style="font-size:100px">AXIT</div>
+                    <div style="margin-top: 37px;">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</div>
+                    <hr>
+                    <div style="font-size: 14px;">Lorem ipsum do or sit amet coneectelur adipiscing aut Aerear euismod bibendum aoreet Prongrav da color sit amet lacus accumsan el VIe Te juste orimodo</div>
+                    <button type="button" class="btn btn-link mybutton">Dowland</button>
+                </div>
+
+                <div class="col-auto align-self-center">
+                    <div class="profile-heading">Try Your <span style="color: #ff8b38">FREE</span> Trial Today</div>
+                    <form class="profile-text align-self-center">
+                        <div class="form-group">
+                            <input type="text" class="form-control" placeholder="Name">
+                        </div>
+                        <div class="form-group">
+                            <input type="email" class="form-control" placeholder="Email">
+                        </div>
+                        <div class="form-group">
+                            <input type="password" class="form-control" placeholder="Password">
+                        </div>
+                        <button onclick="localhost.href='My/GetStarted'" class="getstart">Get started</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </main>
+    <section name="About">
+        <div class="brand-bar justify-content-between">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-4 col-xs-12 ">
+                        <div class="whitepoloska1">Social Media</div>
+                        <div class="whitepoloska2">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenea euismod bibendum laoreet.</div>
+                    </div>
+                    <div class="col col-lg-8 ml-auto  col-xs-12 social-media fa-3x justify-content-between">
+                        <a href="" class="sm"><i class="fab fa-facebook-f"></i></a>
+                        <a href="" class="sm"><i class="fab fa-twitter"></i></a>
+                        <a href="" class="sm"><i class="fab fa-google-plus-g"></i></a>
+                        <a href="" class="sm"><i class="fab fa-pinterest"></i></a>
+                        <a href="" class="sm"><i class="fab fa-instagram"></i></a>
+                        <a href="" class="sm"><i class="fas fa-wifi"></i></a>
+                        <a href="" class="sm"><i class="fas fa-rss"></i></a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    @Scripts.Render("~/bundles/jquery")
+    @Scripts.Render("~/bundles/bootstrap")
+</body>
+</html>

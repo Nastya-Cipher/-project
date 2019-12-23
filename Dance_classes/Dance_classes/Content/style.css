@@ -1,0 +1,223 @@
+
+.container{
+    position: relative;
+    overflow: hidden;
+}
+
+.navbar-toggler-icon{
+    color: white;
+}
+.navbar-brand{
+    font-size: 30px;
+}
+
+.logo{
+    color: #ff8b38;
+    position: relative;
+}
+
+.logo:before{
+    content: 'AX';
+    color: white;
+    position: absolute;
+    overflow: hidden;
+}
+
+.panel{
+    font-size: 15px;
+    align-content: flex-end !important;
+}
+
+.p{
+    margin-left: 30px;
+}
+
+.p{
+    color:white;
+}
+
+.p:hover{
+    color:white;
+    text-decoration: none;
+}
+
+.row{
+    margin-left: 0px;
+    margin-right:0px;
+}
+
+main{
+    background-color: #9a9a9a;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 29px;
+    width: auto;
+    padding-top: 107px;
+    padding-bottom: 140px;
+    color:white;
+}
+
+
+.profile-heading{
+    background-color: #f5f5f5;
+    padding: 20px 50px 20px 50px;
+    color: black;
+    font-size: 20px;
+    font-weight: 800;
+}
+
+hr {
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-left: 0px;
+    width: 67px;
+    border-style: solid;
+    border-color: white;
+    border-width: 2px 0 0 0;
+}
+
+.mybutton{
+    border: 1px solid white;
+    color: white;
+    margin-top: 80px;
+    border-radius: 0px;
+}
+.mybutton:hover, .mybutton:focus{
+    background-color: #ffffff; 
+    color:black;
+    text-decoration: none;
+}
+
+.profile-text{
+    background-color: white;
+}
+
+.form-group{
+    padding-top: 40px;
+}
+
+.form-control{
+    margin: auto;
+    border: 2px solid White;
+    border-radius: 0px;
+    box-shadow: 0 2px 1px #d6d6d6, 0 1px 1px #d6d6d6;
+    width: 285px;
+}
+
+.form-control:active, 
+.form-control:focus{
+    border-color:  white;
+    box-shadow: 0px 0px 1px 1px #d6d6d6;
+
+}
+
+.getstart{
+    margin-top: 50px;
+    background-color: #ff9b51;
+    color:white;
+    width: 100%;
+    height: 55px;
+    border: 1px solid #ff9b51;
+    border-radius: 0px;
+}
+
+.getstart:hover{
+    color:white;
+    background-color: #ffc498;
+    text-decoration: none;
+}
+
+.container{
+    display: flex;
+}
+
+
+.whitepoloska1 {
+    font-weight: 900;
+    font-size: 18px;
+    color: #333333;
+    margin-bottom: 10px;
+}
+
+.whitepoloska2 {
+    margin-bottom: 10px;
+}
+
+.sm {
+    color: #cccccc;
+}
+
+.sm:hover {
+        color: #a8a7a7;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+}
+
+.brand-bar {
+    background-color: white;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    color: #c3c3c5;
+    font-size: 13px;
+    align-items: center;
+    border: 2px solid #b7b7b7;
+    box-shadow: 0px 0px 1px 1px #b7b7b7;
+}
+
+
+@media only screen and (max-device-width: 770px) {
+    .mybutton {
+        margin-bottom: 15px;
+        margin-top: 20px;
+    }
+
+    main {
+        padding-top: 20px;
+        padding-bottom: 30px;
+    }
+
+    .brand-bar {
+        font-size: 10px;
+    }
+
+    .social-media {
+        font-size: 5px;
+    }
+
+    .whitepoloska1 {
+        margin-bottom: 0px;
+    }
+}
+
+
+
+
+
+@media only screen and (max-device-width: 415px) {
+    .profile-heading {
+        min-width: 280 !important;
+        font-size: 15px !important;
+    }
+
+    .profile-text {
+        min-width: 280 !important;
+    }
+
+    button {
+        max-width: 280px;
+    }
+
+    .form-control {
+        max-width: 250px;
+        margin: auto;
+    }
+
+    .social-media {
+        font-size: 2em !important;
+    }
+}
+
+
+

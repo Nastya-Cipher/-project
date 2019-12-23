@@ -20,5 +20,15 @@ namespace Dance_classes.Controllers
         {
             return "Увы, мест нет";
         }
+
+        public ActionResult MySite()
+        {
+            return View();
+        }
+
+        public string GetStarted()
+        {
+            return "Hello (-_-)";
+        }
     }
 }

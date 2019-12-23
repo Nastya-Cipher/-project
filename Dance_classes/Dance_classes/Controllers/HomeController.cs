@@ -44,11 +44,12 @@ namespace Dance_classes.Controllers
             {
                 
                 TagBuilder div = new TagBuilder("div");
-                div.SetInnerText("Милочка, вы не записались, а - а - а, низя так");
+                div.SetInnerText("Милочка, вы не записались, а-а-а, низя так");
                 TagBuilder btn = new TagBuilder("button");
-                btn.MergeAttribute("onclick", "location.href = '/Home/Sing_up/'");
-                btn.InnerHtml += div;
-                return new MvcHtmlString(btn.ToString());
+                btn.Attributes.Add("onclick", "location.href = '/Home/Sing_up/'");
+                btn.Attributes.Add("style", "width:80px; height: 30px;");
+                div.InnerHtml += btn.ToString();
+                return new MvcHtmlString(div.ToString());
             }
             else
             {
@@ -58,25 +59,6 @@ namespace Dance_classes.Controllers
                 div.SetInnerText("Позравляем, вы записались на самые опупенные танцули, ёу!");
                 return MvcHtmlString.Create(div.ToString());
             }
-            
         }
-
-        
-/*
-        public string Sing_up(Record record)
-        {
-            if (record.Person == null || record.Address == null)
-            {
-
-                string html = "< div > Милочка, вы не записались, а - а - а, низя так</ div > ";
-                html += "< button onclick = "location.href = '/Home/Sing_up/@d.Id'" > Записаться </ button >";
-                return
-            }
-            db.Records.Add(record);
-            // сохраняем в бд все изменения
-            db.SaveChanges();
-            return "Позравляем, вы записались на самые опупенные танцули, ёу!";
-        }
-        */
     }
 }
